@@ -14,11 +14,16 @@ function view($view, $data = []) {
 
 function dd(...$dump) {
 
+    dump($dump);
+    exit();
+
+}
+
+function dump(...$dump) {
+
     echo '<pre>';
 
     var_dump($dump);
-
-    die();
 
     echo '</pre>';
 
